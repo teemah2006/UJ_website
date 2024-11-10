@@ -5,7 +5,6 @@ import {
   Collapse,
   Typography,
   IconButton,
-  List,
   ListItem,
   Menu,
   MenuHandler,
@@ -19,7 +18,7 @@ import Image from "next/image";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
+// import { IoIosArrowUp } from "react-icons/io";
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavListMenu(){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -57,18 +56,24 @@ function NavListMenu(){
                 </ListItem>
               </Typography>
             </MenuHandler>
-            <MenuList className="hidden rounded-xl lg:block p-4" placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>
+            <MenuList className="hidden rounded-xl lg:block p-4 bg-red-200" placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>
               
-              <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Figma</MenuItem>
-              <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>React</MenuItem>
-              <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>TailwindCSS</MenuItem>
-            </MenuList>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Kids</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Shoes</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Electronics</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Kitchen aplliances</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Rice</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Bicycle</MenuItem>
+            </MenuList> 
           </Menu>
-          <div className="block lg:hidden">
+          <div className="block lg:hidden p-4 bg-red-200">
             <Collapse open={isMobileMenuOpen}>
-            <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Figma</MenuItem>
-              <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>React</MenuItem>
-              <MenuItem placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>TailwindCSS</MenuItem>
+            <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Kids</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Shoes</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Electronics</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Kitchen aplliances</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Rice</MenuItem>
+              <MenuItem className="hover:shadow-md w-full text-left " placeholder='' onPointerEnterCapture='' onPointerLeaveCapture=''>Bicycle</MenuItem>
             </Collapse>
           </div>
         </React.Fragment>
